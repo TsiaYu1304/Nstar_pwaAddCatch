@@ -1,0 +1,261 @@
+@import "./header";
+@import "./footer";
+@import "./btn";
+@import "./modal";
+
+/*--------input---------*/
+.input {
+    border: 0;
+    outline: 0;
+    padding: 8px 0;
+    border-bottom: 1px solid $main_black;
+    width: 300px;
+    @include sm {
+        width: 268px;
+    }
+}
+/*--------line---------*/
+.line {
+    border-bottom: 1px solid $main_black;
+}
+/*--------image大小---------*/
+.img_26 {
+    width: 26px;
+    height: 26px;
+}
+.img_36 {
+    width: 36px;
+    height: 36px;
+}
+.img_64 {
+    width: 64px;
+    height: 64px;
+}
+.img_80 {
+    width: 80px;
+    height: 80px;
+    @include sm{
+        width: 56px;
+        height: 56px;
+    }
+}
+.img_480 {
+    width: 480px;
+    height: 480px;
+    @include md{
+        width: 320px;
+        height: 320px;
+    }
+    @include sm{
+        width: 375px;
+        height: 375px;
+    }
+}
+.img_logoSmall{
+    width: 91px;
+    height: 38px;
+}
+
+/*--------字體大小---------*/
+.font_20 {
+    font-size: 20px;
+}
+.font_24 {
+    font-size: 24px;
+}
+.font_36 {
+    font-size: 36px;
+    @include sm{
+        font-size: 24px;
+    }
+}
+/*--------字重---------*/
+.font_weight_500{
+    font-weight: 500;
+}
+/*--------字體顏色---------*/
+.font_gray {
+    color: $gray-400;
+}
+.font_yellow {
+    color: $main_yellow;
+}
+.font_black {
+    color: $main_black;
+}
+.font_white {
+    color: white;
+}
+.bg_y {
+    background-color: aquamarine;
+}
+.font_hover_y{
+    &:hover{
+        color: $main_yellow;
+    }
+}
+
+/*--------display---------*/
+.display_flex {
+    display: flex;
+}
+.display_center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.display_setCenter {
+    display: flex;
+    flex-direction: column;
+    //justify-content: center;
+    align-items:center;
+    padding:0;
+   
+}
+
+.display_center_between {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.display_center_end {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: flex-end;
+}
+.display_column_end {
+    display: flex;
+    flex-direction:column;
+    justify-content: end;
+    align-items: flex-end;
+}
+/*--------width---------*/
+.w_372 {
+    width: 372px;
+    @include sm{
+        width: 291px;
+    }
+}
+.w_300 {
+    width: 300px;
+}
+.w_240 {
+    width: 240px;
+}
+.w_268{
+    width: 268px;
+}
+.w_230{
+    width: 230px;
+}
+.w_180{
+    width: 180px;
+}
+
+.w_full{
+    width: 100%;
+}
+/*--------height---------*/
+.h_full{
+    height: 100vh;
+}
+/*--------margin---------*/
+.m_0{
+    margin: 0;;
+}
+.mt_80 {
+    margin-top: 80px;
+}
+.mt_72 {
+    margin-top: 72px;
+}
+.mt_48 {
+    margin-top: 48px;
+}
+.mt_36 {
+    margin-top: 36px;
+}
+.mt_32 {
+    margin-top: 32px;
+}
+.mt_24 {
+    margin-top: 24px;
+}
+.mt_16 {
+    margin-top: 16px;
+}
+.mt_8 {
+    margin-top: 8px;
+}
+
+.mb_36 {
+    margin-bottom: 36px;
+}
+.mb_24 {
+    margin-bottom: 24px;
+}
+.mb_16{
+    margin-bottom: 16px;
+}
+
+.ml_88{
+    margin-left: 88px;
+}
+.ml_48{
+    margin-left: 48px;
+}
+.ml_36{
+    margin-left: 36px;
+}
+.ml_24{
+    margin-left: 24px;
+}
+.ml_16{
+    margin-left: 16px;
+}
+/*--------padding---------*/
+.pl_48 {
+    padding-left: 48px;
+}
+.pl_24 {
+    padding-left: 24px;
+}
+.pl_16 {
+    padding-left: 16px;
+}
+/*--------float---------*/
+.float_r{
+    float:right;
+}
+
+
+.select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image:
+    linear-gradient(45deg, transparent 50%, $main_black 50%),
+    linear-gradient(135deg, $main_black 50%, transparent 50%);
+   // linear-gradient(to right, #ccc, #ccc);
+    background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em;
+    background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+    background-repeat: no-repeat;
+
+
+
+    height: 40px;
+    width:126px;
+    border: 1px solid $main_black;
+    border-radius: 0;
+    padding:0 8px;
+    &:focus{
+        outline: 0;
+    }
+}
